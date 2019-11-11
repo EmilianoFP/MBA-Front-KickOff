@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Tela Competências</title>
+
+   
+    <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+</head>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-sm-2">
+    
+    </div>
+
+    <div class="col-sm-9">
+      
+        <body >
+            <h5>Profissional</h5>
+         
+            <table style="margin-left: 205px;">
+               
+                  <th>Gestor</th>
+                 
+                  <th style="padding-left:  155px;">Profissional</th>
+                  
+            </table>      
+            
+        </body>
+      
+      <div class="row" >
+        
+        <div class="form-group mb-1 col-3">   
+            <label for="comp11" class="sr-only">Competência 11</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Competencia 1">
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Competencia 2">
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Competencia 3">
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Competencia 4">
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Competencia 5">
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Competencia 6">
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Competencia 7">
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Competencia 8">
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Media ">
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Evolução de desempenho ">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-5">   
+          <form action="" method="post"></form>
+            <input type="text" class="form-control" id="comp11valor1" >
+            <input type="text" class="form-control" id="comp11valor2" >
+            <input type="text" class="form-control" id="comp11valor3" >
+            <input type="text" class="form-control" id="comp11valor4" >
+            <input type="text" class="form-control" id="comp11valor5" >
+            <input type="text" class="form-control" id="comp11valor6" >
+            <input type="text" class="form-control" id="comp11valor7" >
+            <input type="text" class="form-control" id="comp11valor8" >
+            <input type="text" class="form-control" id="mediaid"      >
+            <input type="text" class="form-control" id="comp11valor1" > <br>
+            <button type="button" onclick="calcular()"> Calcular</button> 
+            <div id="resultado"></div>  
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp11valor" >
+            <input type="text" class="form-control" id="comp11valor" >
+            <input type="text" class="form-control" id="comp11valor" >
+            <input type="text" class="form-control" id="comp11valor" >
+            <input type="text" class="form-control" id="comp11valor" >
+            <input type="text" class="form-control" id="comp11valor" >
+            <input type="text" class="form-control" id="comp11valor" >
+            <input type="text" class="form-control" id="comp11valor" >
+            <input type="text" class="form-control" id="comp11valor" >
+            <input type="text" class="form-control" id="comp11valor" >
+          </form>
+        </div>
+
+        <script>
+  
+            function calcular() {
+            var n1 = parseFloat(document.getElementById('comp11valor1').value);
+            var n2 = parseFloat(document.getElementById('comp11valor2').value);
+            var n3 = parseFloat(document.getElementById('comp11valor3').value);
+            var n4 = parseFloat(document.getElementById('comp11valor4').value);
+            var n5 = parseFloat(document.getElementById('comp11valor5').value);
+            var n6 = parseFloat(document.getElementById('comp11valor6').value);
+            var n7 = parseFloat(document.getElementById('comp11valor7').value);
+            var n8 = parseFloat(document.getElementById('comp11valor8').value);
+            var total = ((n1+n2+n3+n4+n5+n6+n7+n8)/8);
+            document.getElementById('resultado').innerHTML = total;
+            }
+          
+        </script>
+
+    </div>
+    </div>
+
+    <div class="col-sm">
+    </div>
+    
+  </div>
+</div>  
+
+</html>
